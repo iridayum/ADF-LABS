@@ -1,0 +1,9 @@
+{
+	"name": "ADFLab-GitHub",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "159237b2-0461-46a8-8671-88d81a9f5335",
+		"tenantId": "d5eac21e-aede-4e14-b423-cb26f33949bb"
+	}
+}

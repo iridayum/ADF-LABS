@@ -1,0 +1,9 @@
+{
+	"name": "ADFGITlab",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4967b898-174f-4c9b-a463-871276932de9",
+		"tenantId": "d5eac21e-aede-4e14-b423-cb26f33949bb"
+	}
+}

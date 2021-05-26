@@ -1,0 +1,9 @@
+{
+	"name": "MacroDataFactory",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6210ac71-bd73-4422-bca6-f0e46aea901b",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

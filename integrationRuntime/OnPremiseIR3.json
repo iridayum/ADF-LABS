@@ -1,0 +1,7 @@
+{
+	"name": "OnPremiseIR3",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "For WS2016 to share with MicroDataFactory"
+	}
+}

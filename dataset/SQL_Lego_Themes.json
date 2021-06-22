@@ -1,0 +1,30 @@
+{
+	"name": "SQL_Lego_Themes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLOnPremise_LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "varchar"
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			},
+			{
+				"name": "product",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "lego",
+			"table": "themes"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

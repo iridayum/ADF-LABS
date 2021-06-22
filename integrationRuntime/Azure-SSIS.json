@@ -1,0 +1,27 @@
+{
+	"name": "Azure-SSIS",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central US",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 2
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "mysqlmsserver.database.windows.net",
+					"catalogAdminUserName": "DBazure",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "Basic"
+				},
+				"edition": "Standard",
+				"licenseType": "BasePrice"
+			}
+		}
+	}
+}

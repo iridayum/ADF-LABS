@@ -1,0 +1,7 @@
+{
+	"name": "OnPremiseIR2",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Shared to OnPremise IR2"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "ASQL_MPE",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/d5f9a77d-ef30-4d0d-9616-d9323ced0898/resourceGroups/microsofRG/providers/Microsoft.Sql/servers/mysqlmsserver",
+		"groupId": "sqlServer",
+		"fqdns": [
+			"mysqlmsserver.database.windows.net"
+		]
+	}
+}

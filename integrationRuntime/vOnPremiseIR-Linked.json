@@ -1,0 +1,13 @@
+{
+	"name": "vOnPremiseIR-Linked",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Shared from vPrivateDataFactory",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/d5f9a77d-ef30-4d0d-9616-d9323ced0898/resourcegroups/PrivateRG/providers/Microsoft.DataFactory/factories/vPrivateDataFactory/integrationruntimes/vPrivateOnPremIR",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

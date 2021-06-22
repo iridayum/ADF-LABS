@@ -1,0 +1,33 @@
+{
+	"name": "Lego_Themes",
+	"properties": {
+		"description": "Added a new column. ADLS > ADD column > New Dataset > AzureSQL",
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ADLS_Lego_Themes",
+						"type": "DatasetReference"
+					},
+					"name": "ADLSLegoThemes"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ASQL_Lego_Themes",
+						"type": "DatasetReference"
+					},
+					"name": "ASQLLegoThemes"
+				}
+			],
+			"transformations": [
+				{
+					"name": "AddLoadDate"
+				}
+			],
+			"script": "source(output(\n\t\tid as string,\n\t\tname as string,\n\t\tparent_id as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> ADLSLegoThemes\nADLSLegoThemes derive(load_date = currentDate()) ~> AddLoadDate\nAddLoadDate sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\ttruncate:true,\n\tformat: 'table',\n\tdateFormat:'dd/MM/yyyy',\n\ttimestampFormat:'dd/MM/yyyy',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> ASQLLegoThemes"
+		}
+	}
+}

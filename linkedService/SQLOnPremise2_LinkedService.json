@@ -1,0 +1,17 @@
+{
+	"name": "SQLOnPremise2_LinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=FallbackWS2016;initial catalog=SQLOnPremise2",
+			"userName": "DBazure",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhMmQ0MjIyOS02ZTExLTQxZWItYjhiNS05MzU5YmFhNDBmOWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "OnPremiseIR2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

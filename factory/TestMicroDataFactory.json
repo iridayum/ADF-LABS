@@ -1,0 +1,9 @@
+{
+	"name": "TestMicroDataFactory",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0b065a28-703a-41c7-9bf6-01deecdd75f7",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

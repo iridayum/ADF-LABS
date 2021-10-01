@@ -1,0 +1,21 @@
+{
+	"name": "AzureBatch",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBatch",
+		"typeProperties": {
+			"batchUri": "https://myazurebatchaccount.centralus.batch.azure.com",
+			"poolName": "MyPool",
+			"accountName": "myazurebatchaccount",
+			"linkedServiceName": {
+				"referenceName": "BLOB_LinkedService",
+				"type": "LinkedServiceReference"
+			}
+		},
+		"connectVia": {
+			"referenceName": "Azure-ManagedVNet",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

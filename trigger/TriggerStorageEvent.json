@@ -1,0 +1,18 @@
+{
+	"name": "TriggerStorageEvent",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/lego/blobs/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d5f9a77d-ef30-4d0d-9616-d9323ced0898/resourceGroups/microsofRG/providers/Microsoft.Storage/storageAccounts/microstorageadls",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

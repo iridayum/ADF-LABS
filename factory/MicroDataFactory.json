@@ -2,8 +2,14 @@
 	"name": "MicroDataFactory",
 	"location": "centralus",
 	"identity": {
-		"type": "SystemAssigned",
+		"type": "SystemAssigned,UserAssigned",
 		"principalId": "b2a49aef-c623-4e4e-9aea-0bec914de971",
-		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+		"userAssignedIdentities": {
+			"/subscriptions/d5f9a77d-ef30-4d0d-9616-d9323ced0898/resourcegroups/microsofRG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/MyManagedIdentityIAngheluta": {
+				"clientId": "45417d98-14a5-4bbe-b300-422e0cdb47e9",
+				"principalId": "25ac1a0e-2009-403e-84b8-6098d9deddea"
+			}
+		}
 	}
 }

@@ -1,0 +1,19 @@
+{
+	"name": "powerquery1",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "ADLS_Lego_Themes",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> ADLS_Lego_Themes",
+					"dataset": {
+						"referenceName": "ADLS_Lego_Themes",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"script": "section Section1;\r\nshared ADLS_Lego_Themes = let\r\n  AdfDoc = AzureStorage.DataLakeContents(\"https://microstorageadls.dfs.core.windows.net/lego/themes.csv\"),\r\n  Csv = Csv.Document(AdfDoc, [Delimiter = \",\", Encoding = TextEncoding.Utf8, QuoteStyle = QuoteStyle.Csv]),\r\n  PromotedHeaders = Table.PromoteHeaders(Csv, [PromoteAllScalars = true])\r\nin\r\n  PromotedHeaders;\r\nshared UserQuery = let\r\n  Source = ADLS_Lego_Themes\r\nin\r\n  Source;\r\n"
+		}
+	}
+}

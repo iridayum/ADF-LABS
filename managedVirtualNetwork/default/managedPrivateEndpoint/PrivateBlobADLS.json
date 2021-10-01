@@ -2,6 +2,9 @@
 	"name": "PrivateBlobADLS",
 	"properties": {
 		"privateLinkResourceId": "/subscriptions/d5f9a77d-ef30-4d0d-9616-d9323ced0898/resourceGroups/PrivateRG/providers/Microsoft.Storage/storageAccounts/privateblobadls",
-		"groupId": "blob"
+		"groupId": "blob",
+		"fqdns": [
+			"privateblobadls.blob.core.windows.net"
+		]
 	}
 }

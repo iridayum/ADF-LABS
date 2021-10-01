@@ -1,0 +1,10 @@
+{
+	"name": "AzureMLPrivateEndpoint",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/d5f9a77d-ef30-4d0d-9616-d9323ced0898/resourceGroups/microsofRG/providers/Microsoft.MachineLearningServices/workspaces/MyMachileLearning",
+		"groupId": "amlworkspace",
+		"fqdns": [
+			"ml-mymachilelear-centralus-415f52a0-226a-4716-9e96-9526f0544112.notebooks.azure.net"
+		]
+	}
+}

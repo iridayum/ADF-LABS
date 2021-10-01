@@ -1,0 +1,17 @@
+{
+	"name": "ADLSgen2param",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"use dfs in url": {
+				"type": "string",
+				"defaultValue": "https://microstorageadls.dfs.core.windows.net/"
+			}
+		},
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "@{linkedService().use dfs in url}"
+		}
+	}
+}
